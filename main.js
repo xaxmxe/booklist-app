@@ -31,7 +31,7 @@ class UI {
   }
 
   static deleteBook(el) {
-    if(el.classList.contains('delete')) {
+    if (el.classList.contains('delete')) {
       el.parentElement.parentElement.remove();
     }
   }
@@ -59,7 +59,7 @@ class UI {
 class Store {
   static getBooks() {
     let books;
-    if(localStorage.getItem('books') === null) {
+    if (localStorage.getItem('books') === null) {
       books = [];
     } else {
       books = JSON.parse(localStorage.getItem('books'));
@@ -78,7 +78,7 @@ class Store {
     const books = Store.getBooks();
 
     books.forEach((book, index) => {
-      if(book.isbn === isbn) {
+      if (book.isbn === isbn) {
         books.splice(index, 1);
       }
     });
@@ -101,7 +101,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   const isbn = document.querySelector('#isbn').value;
 
   // Validate
-  if(title === '' || author === '' || isbn === '') {
+  if (title === '' || author === '' || isbn === '') {
     UI.showAlert('Please fill in all fields', 'danger');
   } else {
     // Instatiate book

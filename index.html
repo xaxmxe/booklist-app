@@ -1,48 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Booklist App</title>
+</head>
 
-    <title>My Booklist App</title>
-  </head>
-  <body>
-<div class="container mt-4">
-    <h1 class="display-4 text-center">
-      <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Book</span>List</h1>
-      <form id="book-form">
-        <div class="form-group">
-          <label for="title">Title</label>
-          <input type="text" id="title" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="author">Author</label>
-          <input type="text" id="author" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="isbn">ISBN#</label>
-          <input type="text" id="isbn" class="form-control">
-        </div>
-        <input type="submit" value="Add Book" class="btn btn-primary btn-block">
-      </form>
-      <table class="table table-striped mt-5">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>ISBN#</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody id="book-list"></tbody>
-      </table>
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center"><span class="text-primary">Booklist</span> App</h1>
+    <form id="book-form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id="author" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN#</label>
+        <input type="text" id="isbn" class="form-control">
+      </div>
+      <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+    </form>
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN#</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
   </div>
 
-    <script src="main.js"></script>
-  </body>
-</html>
+  <script src="main.js"></script>
+</body>
 
+</html>
